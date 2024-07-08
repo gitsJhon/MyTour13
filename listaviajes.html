@@ -1,0 +1,49 @@
+<?php
+    session_start();
+    $id = $_SESSION["id"];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/guia/contactos.css">
+    <title>Contactos</title>
+</head>
+<body>
+    <h1>Contactos Recientes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Foto</th>
+                <th>Pais</th>
+                <th>total pago</th>
+                <th><b style="color:black;">Volver a contactar</b></th>
+                <th><b style="color:black;">Rechazar</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Colombia</td>
+                <td>aca va la imagen</td>
+                <form action="" method="post">
+                    <td>aca e paus</td>
+                    <td>total pago</td>
+                    <td>
+                        <input type="hidden" value="" name="id">
+                        <button class="button1" type="submit" name="aceptar">Aceptar</button>
+                    </td>
+                </form>
+                <form action="" method="post">
+                    <td>
+                        <input type="hidden" value="" name="id">
+                        <button class="button1" type="submit" name="rechazar"> Rechazar </button>
+                    </td>
+                </form>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
