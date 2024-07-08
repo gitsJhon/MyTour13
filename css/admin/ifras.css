@@ -1,0 +1,84 @@
+.ifraa{
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.863);
+        border-radius: 4px;
+    
+    position: relative;
+        top: 300px;
+        height: 71px;
+        width: 101%;
+        right: 1px;
+    overflow: hidden;
+}
+
+/* estilos para el input pare enviar mensajes */
+.input-container {
+    display:flex;
+    width: 100%;
+    }
+    
+.input {
+        height: 35px;
+        resize: none;
+            font-size: 20px;
+            text-align: left;
+            outline: none;
+        border-radius: 15px;
+        border: 2px solid  rgb(117, 117, 117) ;
+     
+}
+.boton {    
+        position: relative;
+            left: 5px;    
+        margin-left: 2px;
+        width: 40px;
+        height: 40px;
+            border-radius: 90px;
+        outline: none;
+    
+        animation-name: colorcambio;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+}
+.boton:hover{
+        transform: rotate(-45deg);
+}
+    
+@keyframes colorcambio{
+        0%{
+            border: 1px solid rgb(82, 189, 32) ;   
+        }
+    
+        50%{
+            border: 3px solid rgb(201, 14, 24) ;
+                font-size: 20px;
+        }
+    
+        100%{
+            border: 2px solid rgb(163, 32, 189) ;
+        }
+}
+    
+@media only screen and (max-width: 600px) {
+    .input-container {
+        flex-direction:row;
+}
+    
+    .boton {
+        margin-top: 1px;
+        margin-left: -1px;
+    }
+}
+    
+textarea {
+        overflow: auto;
+        resize: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+}
+textarea::-webkit-scrollbar {
+        display: none;
+}
+    
+    

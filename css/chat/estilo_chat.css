@@ -1,0 +1,115 @@
+.container {
+
+    position: relative;
+      top: 2px;
+    height: 490px;
+    display: flex;
+    border: 3.4px solid rgb(143, 143, 143);
+    border-radius: 5px;
+        overflow-y: scroll;
+        overflow-x: scroll;
+    overflow: hidden;
+    background-color: #adadad2a;
+}
+.container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.container::-webkit-scrollbar-thumb{
+  background: transparent;
+  border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-thumb:hover  {
+  background: transparent;
+}
+
+.contact-list {
+  width: 300px;
+  padding: 10px;
+      border-right: 2px solid rgb(143, 143, 143);
+
+}
+.contact li {
+  list-style-type: none;
+      position: relative;
+      top: -10px;
+      right: 40px;
+  height: 50px;
+  width:110%;
+  padding: 8px;
+  cursor: pointer;           
+      border-width: 2px;
+      border-style: solid;
+      border-image: linear-gradient(45deg,rgb(215, 62, 235),#00ff15) 1;
+}
+#nombre,a{
+  position: relative;
+      top: -9px;
+      left: 10%;
+  text-decoration: none;
+  color: black;
+}
+#caja-chat {
+  width: 102%;
+  height: 300px;
+  overflow-y: scroll;
+  overflow: auto; /* !Agrega una barra de desplazamiento vertical */
+  overflow-x: hidden; /* !Oculta la barra de desplazamiento horizontal */
+
+      position: relative;
+      top: 5px;
+  text-align: left;
+}
+
+#caja-chat::-webkit-scrollbar {
+  width: 8px;
+}
+
+#caja-chat::-webkit-scrollbar-track {
+  background-color: #0c0c0c; /* ?Color del contenedor de la barra de desplazamiento */
+}
+
+#caja-chat::-webkit-scrollbar-thumb:hover {
+  background-color: teal;
+  border-radius: 4px;
+}
+#datos-chat{
+  width: 70%;
+          max-width: 30%; /* todo: Ancho máximo de la burbuja de chat */
+          margin-bottom: 10px;
+          padding: 10px;
+      border-radius: 15px;
+      background-color: rgb(151, 255, 206);;
+          color: rgb(0, 0, 0);
+          font-weight: 900;
+  word-wrap: break-word;
+  position: relative;
+  left: 10%;
+  text-align: center;
+}
+#datos-chat.mensaje-corto {
+  max-width: 10%;
+  background-color: rgb(151, 255, 206); /* ?Cambia el color de fondo para resaltar los mensajes cortos */
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  padding: 5px; /* ?Añade un poco de espacio interno para mejorar la apariencia */
+  text-align: center;   /* !se usa para centrar el texto*/
+ 
+}
+/* 4356789012 */
+
+#datos-chat.recibido {
+  background-color: rgb(19, 169, 219); /* ?Cambia el color de fondo para los mensajes recibidos */
+  color: black;
+  font-weight: bold;
+}
+
+#datos-chat .hora {
+  font-size: 12px; /* todod: Tamaño de fuente para la hora */
+  color: rgb(124, 124, 124); /* !Color de la hora */
+}

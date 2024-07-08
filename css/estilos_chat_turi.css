@@ -1,0 +1,232 @@
+
+.imagennn{
+    width: 330px;
+    height: 340px;
+    margin-top: 2.7cm;
+    margin-left: 2cm;
+    margin-right: 1cm;
+  
+}
+.img1{
+    width: 70px;
+    height: 55px;
+    position: relative;
+    left: 60px;
+}
+
+.border_img{
+    border-radius: 60px;
+}
+.border_img:hover{
+    box-shadow: 0 0 12px rgb(254, 85, 168);
+}
+.let{
+    font-size: 16px;
+}
+.lk{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    position: relative;
+    left: 50px;
+}
+/**
+ * Las estrellas
+ */
+.star_rating{
+    background-color: rgba(121, 180, 239, 0.733);
+    padding: 1.4rem 2.5rem;
+    margin: 2rem;
+    border-radius: 4rem;
+    border-top: 2px solid #5ba2c0;
+    border-left: 2px solid #5ba2c0;
+    background: #bac6d0;
+    margin: auto;
+    margin-top: 17px;
+    box-shadow: 7px 13px 37px  rgba(92, 92, 240, 0.733);
+    width: 330px;
+    height: 170px;
+    position: absolute;
+    top: 365px;
+    bottom: 0;
+    left: 90px;
+    right:100px;
+    text-align: center;
+}
+.star{
+    font-size: 3rem;
+    color: #0560f4;
+    background-color: unset;
+    border: none;
+}
+.imagennl{
+    height:30px;
+    width: 100%;
+}
+.titulo{
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+.Linea_menu{
+    position: relative;
+    top: 6px;
+    border: 1px solid rgba(4, 196, 196, 0.87);
+}
+
+
+label{
+    text-align: center;
+    font-family: cursive;
+}
+.tabla_margen{
+    position: relative;
+    top: 140px;
+    right:30% ;
+}
+/* color del icon llamado money bill alternate outline icon */
+
+.money.bill.alternate.outline.icon{
+    color: green;
+}
+/* estilos del menu letra */
+
+.tit{
+    
+    font-family: 'Rubik Bubbles', cursive;
+    
+    
+}
+#estiloh1 {
+    font-size: 3vw;
+    position: relative;
+    left: 4%;
+    top: 10px;
+        animation-name:col;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+}
+@keyframes col{
+    0%{
+        color: #006400;
+    }
+
+    30%{
+       color:  #228B22;
+    }
+
+    40%{
+        color: #008000;
+    }
+
+    50%{
+        color: #00FF00;
+    }
+    60%{
+        color: #ADFF2F;
+    }
+    70%{
+        color:#9ACD32;
+    }
+    80%{
+        color: #DFFF00;
+    }
+    90%{
+       color:#FFFF00 ; 
+    }
+    100%{
+        color: black;
+    }
+}
+
+  
+.estilo_file{
+      display: inline-block;
+      position: relative;
+      opacity: 0;
+  
+}
+  
+.estilo_file , .distorcion{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+/*  */
+
+/* estilos boton editar */
+.estilos_button{
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    top: 370px;
+    left: 96%;
+    
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+    cursor: pointer;
+}
+   
+.estilos_button::before {
+    content: '';
+    width: 0;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(40deg);
+    background: rgba(254, 85, 167, 0.589);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+   
+.estilos_button:hover::before {
+    width: 30%;
+   }
+   
+   .estilos_button:hover {
+    color: black;
+}
+
+/* estilos modals de editar */
+.estilos_h3{
+    border: none ;
+    border-radius: 9px;
+    background-color: rgba(3, 187, 3, 0.767);
+    width: 97%;
+    height: 30px;
+
+    
+    position: relative;
+    left:12px ;
+    top: 15px;
+
+}
+.estilos_h3::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 13px;
+    border-color: transparent;
+    border-style: solid;
+    border-top-color: rgba(3, 187, 3, 0.767);
+    position: absolute;
+    bottom: -24px;
+    left :calc(50% - 16px);
+
+}
+
+

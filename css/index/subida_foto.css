@@ -1,0 +1,42 @@
+/*todo: ESTILOS DE LA SUBIDA DE LA FOTO EN EL FORMULARIO CREAR CUENTA NUEVA*/
+/* ? Que se encuentran en el index.php "formulario crear cuenta" */
+.text_subir {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ocultar {
+    display: inline-block;
+    position: relative;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.galeria {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    padding: 4px 100px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 1px solid #ffff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #ffffff;
+}
+.galeria:hover {
+    color: #000000;
+    box-shadow: inset 0 -100px 0 0 rgb(182, 182, 182);
+}
+.galeria:active {
+    transform: scale(0.9);
+}

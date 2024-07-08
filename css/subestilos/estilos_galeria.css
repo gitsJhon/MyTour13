@@ -1,0 +1,162 @@
+.conte{
+  margin-block-start: 5%; 
+  margin-inline-start:15%;
+  display: inline-block;
+  padding:2px;
+  box-sizing: border-box;
+}
+
+/* estilo imagen del body */
+.imagen_body{
+  background-image: url(https://images.alphacoders.com/114/114331.jpg);
+  height:100vh;
+  width: 100%;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+
+}
+
+
+/* estilos para las cartas */
+
+
+.card{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    border-radius: 8px;
+    box-shadow:  0 20px 50px rgba(0, 255, 179, 0.548);
+    transition: 1s;
+}
+
+.card:hover{
+    transform: translateX(50%);
+
+}
+
+.card .imagen_estilo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    box-shadow:  0 20px 30px rgba(0, 0, 0, .4);
+    z-index: 10;
+    transition: 1s;
+}
+
+
+.card:hover .imagen_estilo{
+    transform: rotateY(-180deg);
+
+}
+
+
+.imagen_estilo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border: 3px solid rgb(29, 255, 225);
+    border-radius: 8px;
+
+}
+
+.imagen_estilo img:nth-child(2){
+    transform: rotateY(-180deg);
+}
+
+.detalles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titel1{
+    color: #b12a5b;
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    font-family: 'Alkatra', cursive;
+
+}
+.titel2{
+    color: #000;
+    font-size: 18px;
+    position: absolute;
+    top: 60px;
+    font-family: 'Quicksand', sans-serif;
+   
+}
+.titel3{
+    color: #4bcf47;
+    font-size: 26px;
+    position: relative;
+    top: 10px;
+    font-family: 'Alkatra', cursive;
+    
+} 
+ .titel4{
+    color: #000;
+    font-size: 18px;
+    position: relative;
+    top: 25px;
+    font-family: 'Quicksand', sans-serif;
+} 
+
+ .titel5{
+    
+    color:#aa40b8 ;
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+    font-family: 'Alkatra', cursive;
+} 
+ .titel6{
+    color: #000;
+    font-size:18px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
+    
+} 
+
+
+/* fondos 
+  1
+  https://images7.alphacoders.com/294/294732.jpg
+
+  2
+  https://images3.alphacoders.com/372/37215.jpg
+
+  3
+  https://images.alphacoders.com/114/114331.jpg
+
+  4
+  https://images2.alphacoders.com/248/248870.jpg
+
+*/

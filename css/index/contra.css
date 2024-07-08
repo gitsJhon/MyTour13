@@ -1,0 +1,58 @@
+/*todo: ESTILOS DEL OLVIDASTE CONTRASEÑA*/
+/*?ESTE ESTILO ES PARA DARLE DISEÑO A EL MENSAJE DE QUE INGRESE SU NUMERO DE IDENTIFICACIÓN*/
+.olvidaste_contra_label {
+    margin-left: 73px;
+    position: relative;
+    top: 20px;
+}
+/*?ESTE ESTILO ES PARA DARLE DISEÑO A EL INPUT DONDE SE INGRESA EL NUMERO DE IDENTIFICACIÓN*/
+.olvidaste_contra_input {
+    margin-left: 62px;
+    position: relative;
+    top: 40px;
+    height: 39px;
+    width: 70%;
+    border: 1px solid rgb(88, 125, 247);
+    outline: none;
+    border-radius: 10px;
+    color: #020202;
+    padding: 0 0 0 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/*?ESTE ESTILO PERTENECE AL INPUT DE LA IDENTIFICACIÓN, ESTE ES PARA DARLE MAS ESTILO CON EL HOVER*/
+.olvidaste_contra_input:hover {
+    border: 1px solid rgb(87, 200, 235);
+    box-shadow: 25px 10px 25px rgb(0, 169, 199);
+    border-radius: 15px;
+}
+/*?ESTE ESTILO ES PARA DARLE DISEÑO AL BOTON DEL FORMULARIO OLVIDASTE CONTRASEÑA*/
+.olvidaste_contra_but {
+    position: relative;
+    top: 60px;
+    left: 115px;
+    background-image: linear-gradient(to right, rgb(0, 169, 199), #a77c7c, #c9b0b0);
+    border: 10px solid rgb(0, 0, 0);
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+/*?ESTE ESTILO PERTENECE AL BOTON DE ENVIAR FORMULARIO, ESTE ES PARA DARLE MAS ESTILO CON EL HOVER*/
+.olvidaste_contra_but:hover {
+    background-image: linear-gradient(to right, #c9b0b0, #a77c7c, rgb(0, 169, 199));
+}
+/*! HASTA AQUI LLEGAN LOS ESTILOS DE OLVIDASTE CONTRASEÑA*/
+
+/*?ESTILOS DE TEXTO DE OLVIDASTE CONTRASEÑA*/
+.olvidaste_contraseña {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+.olvidaste_contraseña:hover {
+    color: rgb(0, 169, 199);
+    border-bottom: 1px solid rgb(0, 169, 199);
+    cursor: pointer;
+}
+/*!AQUI TERMINAN LOS ESTILOS DEL TEXTO DE OLVIDASTE CONTRASEÑA*/

@@ -1,0 +1,123 @@
+.cajaa {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid rgba(4, 196, 196, 0.87);
+    font-size: 17px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.caja3 {
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    left: 50%;
+    width: 460px;
+    height: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .caja3 {
+        top: 290px;
+        left: 25%;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .caja3 {
+        top: 270px;
+        width: 90%;
+        left: 20px;
+    }
+}
+
+
+/* estilos boton editar */
+.estilos_button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    top: 100px;
+    left: 96%;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+    cursor: pointer;
+}
+
+.estilos_button::before {
+    content: '';
+    width: 0;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(40deg);
+    background: rgba(254, 85, 167, 0.589);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   
+}
+
+.estilos_button:hover::before {
+    width: 30%;
+}
+
+.estilos_button:hover {
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    .estilos_button {
+        top: -760px;
+        left: -45%;
+        transform: translateX(-50%);
+            border-radius: 90px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .estilos_button {
+        top: 10px;
+        font-size: 14px;
+            left: 1%;
+    }
+}
+
+/* estilos modals de editar */
+.estilos_h3{
+    border: none ;
+    border-radius: 9px;
+    background-color: rgba(3, 187, 3, 0.767);
+    width: 97%;
+    height: 30px;
+
+    
+    position: relative;
+    left:12px ;
+    top: 15px;
+
+}
+.estilos_h3::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 13px;
+    border-color: transparent;
+    border-style: solid;
+    border-top-color: rgba(3, 187, 3, 0.767);
+    position: absolute;
+    bottom: -24px;
+    left :calc(50% - 16px);
+
+}

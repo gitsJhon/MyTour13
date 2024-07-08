@@ -1,0 +1,110 @@
+/* estilos perfil , subida de imagenes, nombre del perfil */
+#fotico{
+    height:36vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    object-fit: cover;
+}
+.posicion{
+    position: relative;
+    top: -10px;
+    left: 45%;
+    font-size: 1.4rem;
+}
+.perfil-usuario img {
+    width: 100%;
+    
+  
+}
+  
+  
+.perfil-usuario .avatar-perfil {
+    display: block;
+    width: 180px;
+    height: 178px;  
+    position: absolute;
+    top: 6%;
+    left: 26%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(4, 196, 196, 0.87);
+
+}  
+/* a */
+
+.cuadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 106vh;
+    width: 79%;
+
+    position: relative;
+    right: 15%;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 60%;
+    width: 57%;
+    overflow: hidden;
+}
+
+.ui.very.basic.collapsing.celled.table{
+    position: relative;
+    left:45%;
+    top: -50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 10px 10px;
+    overflow: hidden;
+}
+
+
+.ui.primary.inverted.button{
+    position: relative;
+    top: 70px;
+    left: 10px;
+}
+.ui.red.inverted.button{
+    position: relative;
+    top: 120px;
+    left: -108px;
+}
+
+.cuadro2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 50%;
+
+    position: relative;
+    left: 45%;
+    top:-420px;
+}
+
+.container2 {
+    background-color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 130vh;
+    height: 90vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+
+
+.la_pos{
+    position: relative;
+    top: 300px;
+}

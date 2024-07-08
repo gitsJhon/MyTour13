@@ -1,0 +1,166 @@
+/* estilos video */
+/* OTRO EFECTO DE TITULO , EFECTO MAQUINA DE ESCRIBIR */
+.contenedor2 {
+    position: relative;
+    top: 10%;
+    left: 38%;
+}
+/* USAMOS EL @MEDIA PARA DEFINIR ENTRO DE ESTE EL RESPONSIVE , QUE CUANDO LLEGUE A UN LIMITE SE ACOMODE AL MARGEN NUEVO */
+@media only screen and (max-width: 768px) {
+    .contenedor2 {
+        top: 5%;
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contenedor2 {
+        top: 3%;
+        left: 10%;
+    }
+}
+
+.pos_ti{
+    position: relative;
+    top: 200px;
+    left: 30%;
+}
+/* aca controlamos el color del h1 y la posicion con un float :left; */
+h1{
+    float: left;
+    color: rgba(4, 196, 196, 0.87);
+    position: relative;
+}
+/* estilos para controlar la posicion y animacion donde la demos el nombre (maquina) los segundos y si va ahcer infinita */
+h1 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #fff;
+    
+
+    animation: maquina 2s ;
+}
+/* @keyframes permite que el texto permita hacer el efecto maquina de escribir*/
+@keyframes maquina {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+.user.icon{
+    color: #464646;
+    
+}
+
+
+video{
+    position: relative;
+    top: 100px;
+    left: 0;
+
+    width: 700px;
+    border-radius: 19px;
+}
+
+video {
+    position: relative;
+    top: 100px;
+    left: 0;
+        width: 100%;
+        max-width: 700px;
+        border-radius: 19px;
+}
+
+@media only screen and (max-width: 700px) {
+    video {
+        top: 50px;
+        border-radius: 12px;
+            border: 2px solid teal;
+            
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    video {
+        top: 30px;
+        border-radius: 8px;
+            border: 2px solid teal;
+    }
+}
+
+.img_posicion {
+    position: relative;
+    top: 20px;
+    right: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 29px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .img_posicion {
+        border: 4px solid teal;
+            top: 50px;
+            left: 20%;
+        width: 70px;
+        height: 70px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .img_posicion {
+        border: 4px solid teal;
+            top: 50px;
+            left: 20%;
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
+.img_posicion:hover {
+    box-shadow: 0 0 10px rgb(254, 85, 168);
+}
+.pos_h4 {
+    color: rgb(194, 78, 97);
+}
+
+.estilo_autor {
+    color: rgba(4, 196, 196, 0.87);
+        font-family: cursive;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .pos_h4 {
+        color: rgb(255, 0, 0); 
+        position: relative;
+            top: -35px;
+            left: 36%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .pos_h4 {
+        color: rgb(135, 241, 12); 
+        position: relative;
+            top: -35px;
+            left: 36%;
+    }
+}
+.arrow.alternate.circle.right.outline.icon{
+    color: rgb(61, 61, 61);
+    position: relative;
+    left: 10px;
+}
+
+
+
+

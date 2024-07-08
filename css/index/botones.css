@@ -1,0 +1,136 @@
+
+/*ESTILOS DE BOTON DE DESCARGAR DEL PDF*/
+.pdf, .pdf2{
+    display: flex;
+        margin: 5px 5px 5px 5px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.buttonDownload {
+    position: relative;
+    padding: 10px 25px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+    font-family: cursive;
+    border: none;
+    border-radius: 19px;
+    background-color:transparent;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(25px);
+    border-radius: 50px 10px ;
+    border: 1px solid teal;
+}
+
+.buttonDownload:hover {
+    background-color: #019cf549;
+    color: rgb(0, 0, 0);
+}
+
+.buttonDownload:before,
+.buttonDownload:after {
+    content: '  ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+}
+
+.buttonDownload:before {
+    width: 15px;
+    height: 4px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+}
+
+.buttonDownload:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 6px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 1s linear infinite;
+    animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+    border-color: #000000;
+}
+
+.buttonDownload:hover:after {
+    border-top-color: #000000;
+    animation-play-state: running;
+}
+
+/*AQUI TERMINAN LOS ESTILOS DE BOTON DE DESCARGAR DEL PDF*/
+@keyframes downloadArrow {
+    0% {
+        margin-top: -7px;
+        opacity: 1;
+    }
+
+    0.001% {
+        margin-top: -15px;
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 0;
+        opacity: 0.4;
+    }
+}
+
+
+/* ?ESTE ESTILO ES DEL ICONO DEL CANDADO PARA MOSTRAR LA CONTRASEÑA*/
+.boton_ojo {
+    width: 27px;
+    position: absolute;
+    left: 305px;
+    margin-top: 10px;
+}
+/*?ESTILOS DE LOS BOTONES QUE ENVIAN LOS FORMULARIOS, INICIAR SESION Y REGISTRARSE*/
+/*?ESTE PERTENECE AL FORMULARIO DE INICIAR SESION, Y ESTA COMO (Iniciar sesión)*/
+.boton1 {
+    background-image: linear-gradient(to right, rgb(0, 169, 199), #a77c7c, #c9b0b0);
+    border: none;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+/*?ESTE TAMBIEN PERTENECE AL FORMULARIO DE INICIAR SESION, ES PARA DARLE MAS ESTILOS CON EL HOVER*/
+.boton1:hover {
+    background-image: linear-gradient(to right, #c9b0b0, #a77c7c, rgb(0, 169, 199));
+    box-shadow: 0px 0px 20px rgba(192, 140, 140, 0.8);
+
+}
+/*?ESTE PERTENECE AL FORMULARIO DE CREAR CUENTA, Y ESTA COMO (Registrarse)*/
+.boton2 {
+    background-image: linear-gradient(to right, rgb(0, 169, 199), #a77c7c, #c9b0b0);
+    border: none;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+        position: relative;
+        right: 26%;
+}
+/*?ESTE TAMBIEN PERTENECE AL FORMULARIO DE CREAR CUENTA, ES PARA DARLE MAS ESTILOS CON EL HOVER*/
+.boton2:hover {
+    background-image: linear-gradient(to right, #c9b0b0, #a77c7c, rgb(0, 169, 199));
+    box-shadow: 0px 0px 20px rgba(192, 140, 140, 0.8);
+}
+/*!HASTA AQUI LLEGAN LOS DE LOS BOTONES QUE ENVIAN LOS FORMULARIOS, INICIAR SESION Y REGISTRARSE */

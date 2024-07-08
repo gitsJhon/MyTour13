@@ -1,0 +1,83 @@
+.buttonDownload4 {
+    position: relative;
+    padding: 10px 25px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+    font-family: cursive;
+    border: none;
+    border-radius: 19px;
+    background-color:transparent;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(25px);
+    border-radius: 50px 10px ;
+    border: 1px solid rgb(183, 0, 255);
+}
+
+.buttonDownload4:hover {
+    background-color: #9c01f53d;
+    color: rgb(0, 0, 0);
+}
+
+.buttonDownload4:before,
+.buttonDownload4:after {
+    content: '  ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+}
+
+.buttonDownload4:before {
+    width: 15px;
+    height: 4px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+}
+
+.buttonDownload4:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 6px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 1s linear infinite;
+    animation-play-state: paused;
+}
+
+.buttonDownload4:hover:before {
+    border-color: #000000;
+}
+
+.buttonDownload4:hover:after {
+    border-top-color: #000000;
+    animation-play-state: running;
+}
+
+/*AQUI TERMINAN LOS ESTILOS DE BOTON DE DESCARGAR DEL PDF*/
+@keyframes downloadArrow {
+    0% {
+        margin-top: -7px;
+        opacity: 1;
+    }
+
+    0.001% {
+        margin-top: -15px;
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 0;
+        opacity: 0.4;
+    }
+}

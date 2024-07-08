@@ -1,0 +1,15 @@
+.ifraco{
+    border: none;
+    outline: none;
+    background-color: rgba(150, 150, 150, 0.192);
+        border-radius: 4px;
+    
+    position: relative;
+        top: -70px;
+        height: 350px;
+        width: 101%;
+        right: 1px;
+}
+.ifa2{
+    width: 80%;
+}

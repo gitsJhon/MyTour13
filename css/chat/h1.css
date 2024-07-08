@@ -1,0 +1,61 @@
+h1{
+    position: relative;
+        top: 70px;
+        left: 70px;
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+hr{
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(45deg,cyan,#00ff95) 1;
+}
+.hr2{
+    width: 101%;
+
+    position: relative;
+        top: -80px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(45deg,cyan,#00ff95) 1;
+}
+.sepa2{
+    position: relative;
+        left: 10px;
+        top: 2px;
+    
+}
+.sepa3{
+    position: relative;
+        left: 74px;
+        top: -70px;
+}
+.sepa4{
+    position: relative;
+        left: 87%;
+        top: -130px;
+    font-weight: 900;
+    font-size: 20px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    background-color: transparent;
+    border: transparent;
+}
+
+
+
+.sepa4:hover{
+    transform: rotateY(180deg);
+}
+
+.bord{
+    border-radius: 90px;
+    border:3px solid rebeccapurple;
+    position: relative;
+    left: 8px;
+    top: 10%;
+}
+

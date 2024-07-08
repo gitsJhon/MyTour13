@@ -1,0 +1,179 @@
+/* estilos perfil , subida de imagenes, nombre del perfil */
+#fotico{
+    height:48vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.posicion{
+    position: relative;
+    left: 47%;
+}
+
+.perfil-usuario img {
+    width: 100%;
+}
+
+.perfil-usuario .avatar-perfil {
+    display: block;
+    width: 270px;
+    height: 270px;
+    background-color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 20%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 8px 7px 20px 8px rgb(254, 85, 168);
+}
+
+@media only screen and (max-width: 768px) {
+    .perfil-usuario .avatar-perfil {
+
+        width: 200px;
+        height: 200px;
+
+            top: -55px;
+            left: 40%;
+        box-shadow: 8px 0px 10px 8px rgba(68, 68, 68, 0.726);
+    }
+    #fotico{
+        height:40vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .perfil-usuario .avatar-perfil {
+        width: 150px;
+        height: 150px;
+            left: 22%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+    }
+}
+
+.perfil-usuario .cambiar-foto {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(65, 65, 65, 0.5);
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    transition: all ease-in 200ms;
+}
+
+.perfil-usuario .cambiar-foto i {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    color: rgb(0, 255, 0);
+}
+
+.perfil-usuario .avatar-perfil:hover .cambiar-foto {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* estilos para el "estilo_h4" titulo */
+.estilo_h4 {
+    border: none;
+    border-radius: 9px;
+    background-color: rgba(3, 187, 3, 0.767);
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    left: 30px;
+    top: -35px;
+}
+
+.estilo_h4::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 14px;
+    border-color: transparent;
+    border-style: solid;
+    border-top-color: rgba(3, 187, 3, 0.767);
+    position: absolute;
+    bottom: -35px;
+    left: calc(40% - 16px);
+}
+@media only screen and (max-width: 768px) {
+    .estilo_h4 {
+        width: 30%;
+            left: 120%;
+    }
+  
+    .estilo_h4::before {
+        top: 3px;
+        left: -30px;
+            transform: rotate(89deg);
+            border-width: 12px; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .estilo_h4 {
+        width: 30%;
+            left: -5%;
+            top: -70px;
+    }
+  
+    .estilo_h4::before {
+        left: calc(70%  - 12px);
+    }
+}
+
+
+.star_ratingg {
+    position: absolute;
+    top: 248px;
+    right: 49.1%;
+    bottom: 0;
+    margin: 10% 20% 20% 9%;
+    text-align: center;
+}
+
+.starr {
+    font-size: 3rem;
+    color: rgba(4, 196, 196, 0.87);
+    background-color: unset;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .star_ratingg {
+        position: relative;
+            top: 90px;
+            left: 85px;
+        
+    }
+
+    .starr {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .star_ratingg {
+        margin: 2% 5% 5% 5%;
+    }
+
+    .starr {
+        font-size: 1.5rem;
+    }
+}

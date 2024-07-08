@@ -1,0 +1,151 @@
+
+
+.aa{
+
+  height:30vh;
+  width: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+
+.perfil-usuario img {
+    width: 100%;
+  }
+  
+  
+  .perfil-usuario .avatar-perfil {
+    display: block;
+    width: 200px;
+    height: 200px;
+
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 20%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow:8px 7px 20px 8px rgb(254, 85, 168);
+  }
+  .perfil-usuario .cambiar-foto {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(65, 65, 65, 0.5);
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    transition: all ease-in 200ms;
+  }
+  .perfil-usuario .cambiar-foto i {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    color:rgb(0, 255, 0);
+  }
+  .perfil-usuario .avatar-perfil:hover .cambiar-foto {
+    transform: translateY(0);
+    opacity: 1;
+    
+  }
+
+
+  .boton{
+    border: 1px solid rgba(4, 196, 196, 0.87);
+    background-color: transparent;
+    font-family: cursive;
+
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+
+    letter-spacing: 1px;
+    transition: ease-out 0.5s;
+
+
+  }
+  .boton:hover{
+    box-shadow: inset 0 -100px 0 0 rgba(4, 196, 196, 0.87);
+    
+  }
+  .boton.active{
+    transform: scale(0.9);
+  }
+
+
+.img_estilo{
+    border-radius: 120px;
+    width: 250px;
+    height: 250px;
+}
+.img_estilo:hover{
+    box-shadow: 0 0 40px rgba(4, 196, 196, 0.87);
+}
+
+.efecto3d {
+    text-align: center; 
+    font-family: Arial  rgba(4, 196, 196, 0.87); 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #000; 
+    text-shadow: 0 1px 0  rgba(4, 196, 196, 0.87), 0 2px 0  rgba(4, 196, 196, 0.87), 0 3px 0 #bbb, 0 4px 0  rgba(4, 196, 196, 0.87), 0 5px 0 rgba(4, 196, 196, 0.87), 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+}
+
+
+/* estilos tipo file */
+.ocultar{
+    display: inline-block;
+    position: relative;
+    opacity: 0;
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+}
+.galeria {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid rgb(254, 85, 168);;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 rgb(254, 85, 168);
+    
+    font-family: cursive;
+  }
+  
+  .galeria:hover {
+    color: black;
+    box-shadow: inset 0 -100px 0 0 rgb(254, 85, 168);
+  }
+  
+  .galeria:active {
+   
+    transform: scale(0.9);
+  }
+ 
+  

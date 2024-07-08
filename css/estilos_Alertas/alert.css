@@ -1,0 +1,19 @@
+.my-swal-popup {
+    background-color: transparent;
+  }
+  
+  .my-swal-title {
+    font-family: cursive;
+    color: red;
+  }
+  
+  .my-swal-text {
+    color: blue;
+  }
+  
+  .my-swal-confirm-button {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+
+  }
+  

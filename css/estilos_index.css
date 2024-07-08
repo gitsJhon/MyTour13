@@ -1,0 +1,115 @@
+.contenido{
+    width: 15%;
+    height: 100%;
+    background-color: white;
+    border-style:solid;
+    border-color: black;    
+    border-width: 0px 2px 0px 0px ;
+    animation-name: borde_color; /* Nombre de la animacion */
+    animation-duration: 5s; ; /* Duracion de la animacion */
+}
+#carouselExampleSlidesOnly{
+    z-index: -1;
+    position: relative;
+    bottom: 695px;
+}
+.input_nombre{
+    border-color: black;
+    border-radius: 5px;
+    position: relative;
+    left: 35%;
+    bottom: 30px;
+}
+.input_contraseña{
+    border-color: black;
+    border-radius: 5px;
+    position: relative;
+    left: 35%;
+    bottom: 25px;
+}
+
+.pdf{
+    text-align: center;
+    
+}
+
+
+
+.buttonDownload {
+    display: inline-block;
+    position: relative;
+    padding: 10px 25px;
+    background-color: #50e3f6;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+    font-family: cursive;
+    border: none;
+    border-radius: 19px;
+   }
+   
+   .buttonDownload:hover {
+    background-color: #50e3f6;
+    color: rgb(0, 0, 0);
+   }
+   
+   .buttonDownload:before, .buttonDownload:after {
+    content: '  ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+   }
+   
+   .buttonDownload:before {
+    width: 15px;
+    height: 4px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+   }
+   
+   .buttonDownload:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 6px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 1s linear infinite;
+    animation-play-state: paused;
+   }
+   
+   .buttonDownload:hover:before {
+    border-color: #000000;
+   }
+   
+   .buttonDownload:hover:after {
+    border-top-color: #000000;
+    animation-play-state: running;
+   }
+   
+   @keyframes downloadArrow {
+    0% {
+     margin-top: -7px;
+     opacity: 1;
+    }
+   
+    0.001% {
+     margin-top: -15px;
+     opacity: 0.4;
+    }
+   
+    50% {
+     opacity: 1;
+    }
+   
+    100% {
+     margin-top: 0;
+     opacity: 0.4;
+    }
+   }

@@ -1,0 +1,121 @@
+.cuadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    position: relative;
+    top: -60px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Estilos adicionales para el formulario */
+.formulariooi {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
+/* Ajusta los estilos según tus necesidades */
+
+/*ESTILOS DEL LABEL*/
+.labell {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: teal;
+  }
+
+  .labell1{
+    margin: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .estilo_date {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .estilos_boton {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #555;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .estilos_boton option {
+    font-size: 14px;
+    color: #555;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+
+.estilos_boton{
+    margin-top: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+  .color_inputs {
+    color: #333;
+    
+  }
+/*ESTILOS DEL BOTON CANCELAR*/
+.boton{
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .boton {
+      background-image: linear-gradient(to right, rgb(0, 169, 199), #a77c7c, #c9b0b0);
+      border: none;
+      color: #000000;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 1px solid #fff;
+  }
+    
+  .boton:hover {
+      background-image: linear-gradient(to right, #c9b0b0, #a77c7c, rgb(0, 169, 199));
+      box-shadow: 0px 0px 20px rgba(119, 81, 81, 0.8);
+  }
+  
+  
+
+/*ESTILOS DE LOS INPUTS*/
+.estilo_input {
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,252 @@
+/* estilos perfil , subida de imagenes, nombre del perfil */
+#fotico{
+    height:48vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.posicion{
+    position: relative;
+    left: 47%;
+}
+
+
+.perfil-usuario img {
+    width: 100%;
+}
+
+.perfil-usuario .avatar-perfil {
+    display: block;
+    width: 270px;
+    height: 270px;
+    background-color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 20%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 8px 7px 20px 8px rgb(254, 85, 168);
+}
+
+@media only screen and (max-width: 768px) {
+    .perfil-usuario .avatar-perfil {
+
+        width: 200px;
+        height: 200px;
+
+            top: -80px;
+            left: 48%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .perfil-usuario .avatar-perfil {
+        width: 150px;
+        height: 150px;
+            left: 22%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+    }
+}
+
+.perfil-usuario .cambiar-foto {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(65, 65, 65, 0.5);
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    transition: all ease-in 200ms;
+}
+
+.perfil-usuario .cambiar-foto i {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    color: rgb(0, 255, 0);
+}
+
+.perfil-usuario .avatar-perfil:hover .cambiar-foto {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* estilos para el "estilo_h4" titulo */
+.estilo_h4 {
+    border: none;
+    border-radius: 9px;
+    background-color: rgba(3, 187, 3, 0.767);
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    left: 30px;
+    top: -35px;
+}
+
+.estilo_h4::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 14px;
+    border-color: transparent;
+    border-style: solid;
+    border-top-color: rgba(3, 187, 3, 0.767);
+    position: absolute;
+    bottom: -35px;
+    left: calc(40% - 16px);
+}
+@media only screen and (max-width: 768px) {
+    .estilo_h4 {
+        width: 30%;
+            left: 130%;
+    }
+  
+    .estilo_h4::before {
+        top: 3px;
+        left: -33px;
+            transform: rotate(89deg);
+            border-width: 12px;
+        
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .estilo_h4 {
+        width: 30%;
+            left: -5%;
+            top: -100px;
+    }
+  
+    .estilo_h4::before {
+        left: calc(70%  - 12px);
+    }
+}
+
+
+.cajaa {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid rgba(4, 196, 196, 0.87);
+    font-size: 17px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.caja1 {
+    position: absolute;
+    top: 105px;
+    bottom: 0;
+    left: 550px;
+    right: 100px;
+    width: 620px;
+    height: 10px;
+}
+
+.caja3 {
+    position: absolute;
+    top: 160px;
+    bottom: 0;
+    left: 15%;
+    width: 460px;
+    height: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .caja1 {
+        top: 240px;
+        left: 100px;
+        width: 70%;
+    }
+
+    .caja3 {
+        top: 290px;
+        left: 25%;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .caja1 {
+        top: 190px;
+        left: 60px;
+    }
+
+    .caja3 {
+        top: 270px;
+        width: 90%;
+        left: 20px;
+    }
+}
+
+
+
+/* estilos boton editar */
+.estilos_button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    top: 370px;
+    left: 96%;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+    cursor: pointer;
+}
+
+.estilos_button::before {
+    content: '';
+    width: 0;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(40deg);
+    background: rgba(254, 85, 167, 0.589);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   
+}
+
+.estilos_button:hover::before {
+    width: 30%;
+}
+
+.estilos_button:hover {
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    .estilos_button {
+        top: -210px;
+        left: -20%;
+        transform: translateX(-50%);
+            border-radius: 90px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .estilos_button {
+        top: 10px;
+        font-size: 14px;
+            left: 1%;
+    }
+}

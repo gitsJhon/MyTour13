@@ -1,0 +1,26 @@
+/* todo: ESTILOS DEL LOGO MY TOUR 13*/
+/*?ESTE ES LOGO QUE PERTENECE A LA PARTE DE INICIAR SESIÓN*/
+.imagen_tour1 {
+    width: 240px;
+    height: 120px;
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    background-color:#ffffff1e ;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(25px);
+    border-radius: 50px 10px ;
+}
+/*?ESTE ES LOGO QUE PERTENECE A LA PARTE DE CREAR CUENTA*/
+.imagen_tour2 {
+    width: 160px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 225px;
+    background-color:#ffffff1e ;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(25px);
+    border-radius: 50px 10px 10px ;
+}
+/*!AQUI TERMINAN LOS ESTILOS DEL LOGO MY TOUR 13*/

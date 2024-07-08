@@ -1,0 +1,117 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+/* todo: Estilos para el contenido del modal */
+
+/* ?estilos para el titulo con su clase llamada  class="Agregar" */
+.Agregar{
+    text-decoration:overline;
+    font-size: 1.7rem;
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+        text-align: center;
+    color: teal;
+    
+}
+/* !finalizamos con el estilo del Agregar */
+
+/* ?estilos boton de Accept */
+.Centro{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.Accept{
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    cursor: pointer;
+    background-image: linear-gradient(150deg, #00ddeb, #5b24f3 50%, #af40ff);
+
+    position: relative;
+    right: 3%;
+}
+.Accept .span1{
+    display: flex;
+    border-radius: 6px;
+    padding: 10px 50px;
+    
+    color: #000;
+    font-size: 22px;
+    background-color: #fff;
+    transition: 300ms;
+}
+
+.Accept .span1:hover{
+    background-color: #71cdf1;
+    color:#fff;
+}
+
+/* !Finalizamos con el boton de Accept */
+
+.NO_Accept{
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    cursor: pointer;
+    background-image: linear-gradient(150deg, #ff3300, #c74242 50%, #54058b);
+    position: relative;
+    left: 3%;
+}
+.NO_Accept .span2{
+    display: flex;
+    border-radius: 6px;
+    padding: 10px 50px;
+    
+    color: #000;
+    font-size: 22px;
+    background-color: #fff;
+    transition: 300ms;
+}
+.NO_Accept .span2:hover{
+    background-color: #f17171;
+    color:#fff;
+}
+.nom{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-decoration:underline solid teal 2px;
+    -webkit-text-stroke-width: 1px;
+}
